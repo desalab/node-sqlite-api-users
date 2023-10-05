@@ -1,0 +1,67 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files and debugging files
+npm-debug.log
+yarn-error.log
+.vscode/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore build output
+build/
+dist/
+out/
+
+# Ignore dependencies in development
+*.rbc
+*.sassc
+*.sprockets-manifest*
+*.tsbuildinfo
+.tern-port
+*.swp
+._*
+.DS_Store?
+.client-work/
+node_modules/
+# optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Typescript
+tsconfig.tsbuildinfo
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vscode files
+.vscode
