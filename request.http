@@ -10,3 +10,18 @@ Content-Type: application/json
     "name":"ana",
     "email":"ana@tes.com"
 }
+
+###
+GET http://18.219.116.5:3000/api/v1/users
+
+###
+POST http://18.219.116.5:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "name":"ana",
+    "email":"ana@tes.com"
+}
+
+###
+DELETE http://18.219.116.5:3000/api/v1/users/1

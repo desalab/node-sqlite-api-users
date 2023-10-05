@@ -37,11 +37,11 @@ app.get('/api/v1/users/:id', (req, res) => {
 
 // POST (create) a new user
 app.post('/api/v1/users', (req, res) => {
-  const { name } = req.body;
+  const { name,email } = req.body;
   if (!name) {
     return res.status(400).json({ error: 'Name is required' });
   }
-  db.run('INSERT INTO users (name,email) VALUES (?,?)', [name], function (err) {
+  db.run('INSERT INTO users (name,email) VALUES (?,?)', [name,email], function (err) {
     if (err) {
       return res.status(500).json({ error: err.message });
     }
